@@ -16,6 +16,24 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
 </head>
+    <!-- Jingle bells sound -->
+<audio id="jingleBellsAudio">
+    <source src="path/to/jingle-bells.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<!-- Button to play the jingle bells sound -->
+<button onclick="playJingleBells()">Play Jingle Bells</button>
+
+<!-- Your existing JavaScript and Bootstrap script links here -->
+
+<script>
+    function playJingleBells() {
+        var audio = document.getElementById('jingleBellsAudio');
+        audio.play();
+    }
+</script>
+
 <body id="page-top">
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
         <div class="container px-5">
